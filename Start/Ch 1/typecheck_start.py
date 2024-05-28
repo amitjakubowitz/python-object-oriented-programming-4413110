@@ -19,9 +19,14 @@ n1 = Newspaper("The Washington Post")
 n2 = Newspaper("The New York Times")
 
 # TODO: use type() to inspect the object type
+# print(type(b1)) #book object type
+# print(type(n1)) # newspaper object type 
 
-
-# TODO: compare two types together
-
-
+# # TODO: compare two types together
+# print(type(b1)==type(b2)) #true
+# print(type(b1)==type(n2)) #false
 # TODO: use isinstance to compare a specific instance to a known type
+# print(isinstance(b1,Book)) #true
+# print(isinstance(n1,Newspaper)) #true
+# print(isinstance(n2,Book)) #false 
+print(isinstance(n2,object)) #true because class inherites from object 
